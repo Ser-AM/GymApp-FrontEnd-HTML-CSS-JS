@@ -1,0 +1,58 @@
+/* styles.css */
+
+/* Importación de FontAwesome (mantenemos esta línea) */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f9f9; /* Fondo ligeramente gris claro */
+}
+
+.app-header {
+    background-color: #222; /* Fondo oscuro para el header */
+    color: #fff; /* Texto blanco */
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.logo {
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo i {
+    font-size: 2.5rem;
+    margin-right: 10px;
+}
+
+/* Personalización de los enlaces del menú principal */
+#main-menu a {
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+#main-menu a.active,
+#main-menu a:hover {
+    background-color: #4CAF50; /* Color de fondo al pasar el ratón o activo */
+}
+
+.nav-secundario {
+    padding: 5px;
+}
+
+#main-content {
+    padding: 20px;
+    width: 100%;
+}
+
+/* Personalización de las tablas */
+table th, table td {
+    text-align: left;
+}
+
+.btn_eliminar i {
+    font-size: 16px; /* Tamaño del icono */
+}

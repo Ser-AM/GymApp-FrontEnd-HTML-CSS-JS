@@ -1,0 +1,105 @@
+<div class="container">
+    <div class="row mb-3">
+        <div class="col">
+            <button class="btn btn-primary" data-toggle="modal" data-target="#modalInsertarEjercicio">
+                Insertar Ejercicio
+            </button>
+        </div>
+    </div>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Descripción</th>
+                <th>Ver/Editar</th>
+                <th>Eliminar</th>
+            </tr>
+        </thead>
+        <tbody id="tabla-ejercicios">
+            <!-- Aquí se insertarán dinámicamente las filas de la tabla -->
+        </tbody>
+    </table>
+</div>
+
+<!-- Modal para insertar ejercicio -->
+<div class="modal fade" id="modalInsertarEjercicio" tabindex="-1" aria-labelledby="modalInsertarEjercicioLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalInsertarEjercicioLabel">Insertar Ejercicio</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form id="formInsertarEjercicio">
+                    <div class="form-group">
+                        <label for="nombreEjercicio">Nombre</label>
+                        <input type="text" class="form-control" id="nombreEjercicio" placeholder="Introduce el nombre del ejercicio" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="descripcionEjercicio">Descripción</label>
+                        <textarea class="form-control" id="descripcionEjercicio" rows="3" placeholder="Introduce la descripción del ejercicio" required></textarea>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                <button type="button" class="btn btn-primary" id="btnGuardarEjercicio">Guardar Ejercicio</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal para modificar ejercicio -->
+<div class="modal fade" id="modalModificarEjercicio" tabindex="-1" aria-labelledby="modalModificarEjercicioLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalModificarEjercicioLabel">Modificar Ejercicio</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form id="formModificarEjercicio">
+                    <input type="hidden" id="modificarEjercicioID" name="modificarEjercicioID">
+
+                    <div class="form-group">
+                        <label for="modificarNombreEjercicio">Nombre</label>
+                        <input type="text" class="form-control" id="modificarNombreEjercicio" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="modificarDescripcionEjercicio">Descripción</label>
+                        <textarea class="form-control" id="modificarDescripcionEjercicio" rows="3" required></textarea>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                <button type="button" class="btn btn-primary" id="btnGuardarCambiosEjercicio">Actualizar Ejercicio</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal para eliminar ejercicio -->
+<div class="modal fade" id="modalEliminarEjercicio" tabindex="-1" aria-labelledby="modalEliminarEjercicioLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalEliminarEjercicioLabel">Eliminar Ejercicio</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>¿Estás seguro de que deseas eliminar este ejercicio?</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                <button type="button" class="btn btn-danger" id="btnConfirmarEliminarEjercicio">Eliminar</button>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,2 +1,11 @@
 # GymApp-FrontEnd-HTML-CSS-JS
- Frontend para la aplicación GymApp. El proyecto utiliza HTML, CSS y JavaScript para proporcionar una interfaz eficiente, además de aprovechar las librerías Bootstrap y jQuery para un diseño visual simplificado y un código más accesible. Para más detalles, consulta el archivo README.
+Frontend sencillo para la aplicación GymApp, desarrollado utilizando HTML, CSS y JS para proporcionar una interfaz intuitiva y eficiente.
+
+
+## Changelog
+
+### 1.0.0
+
+    - Implementación inicial del frontend utilizando HTML, CSS y JavaScript.
+    - Diseño básico de la interfaz de usuario con las funcionalidades esenciales para la gestión de ejercicios.
+    - Integración de Bootstrap y jQuery para mejorar el diseño visual y la experiencia de usuario.
